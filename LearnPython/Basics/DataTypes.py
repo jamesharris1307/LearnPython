@@ -288,3 +288,41 @@ Split String. ',' Comma is the seperator and the sentence is split
 """
 a = "Hello, World!"
 print(a.split(",")) # Expected Output ['Hello' ',' 'World!']
+
+# String Concatenation
+a = "String"
+b = "Concatenation"
+c = a + b
+print(c) # Expected Output = StringConcatenation
+
+a = "Hello"
+b = "World"
+c = a + " " + b # Expected Output = String Concatenation
+
+"""
+# String Format
+age = 36
+txt = "Age: " + age
+print(txt) # Expected Output = Error Cannot Concatenate Strings and Ints at same time
+"""
+
+# F-Strings
+# Specify F-String put F infront of the String Literal and add curly brackets {} as placeholders
+age = 36
+txt = f"Age: {age}"
+print(txt) # Expected Output = Age: 36
+
+#Placeholders and Modifiers
+price = 59
+txt = f"Price: {price} £'s"
+print(txt)
+
+# Display Price with 2 Decimals
+price = 59
+txt = f"Price {price:.2f} £'s"
+print(txt) # Expected Output = Price 59.00 £'s
+
+# Math Operation in Placeholder
+txt = f"Price: {20 * 59} £'s"
+print(txt) # Expected Output = Price 1180 £'s
+
