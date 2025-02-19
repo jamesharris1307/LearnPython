@@ -326,3 +326,37 @@ print(txt) # Expected Output = Price 59.00 £'s
 txt = f"Price: {20 * 59} £'s"
 print(txt) # Expected Output = Price 1180 £'s
 
+# Escape Character
+#txt = "I am "Illegal"" # Expected Output = Error
+txt = "I am \"Legal\""
+print(txt)# Expected Output = I am "Legal"
+
+# Escape Characters:
+# \'
+txt = 'I am \'Single Quote\''
+print(txt) # Expected Output = I am 'Single Quote'
+# \\
+txt = "I am Backslash\\Slashback"
+print(txt)  # Expected Output = I am Backslash\Slashback
+#\n
+txt = "I am \n New Line"
+print(txt) # Expected Output = I am (Next Line) New Line
+#\r
+txt = "I am \r Carriage Return"
+print(txt) # Expected Output = I am (Next Line) Carriage Return
+#\t
+txt = "I am \t Tab"
+print(txt) # Expected Output = I am    tab
+#\b
+txt = "I am \b Backspace" # Expected Output = I amBackspace
+print(txt) # Expected Output = I amBackspace
+#\f
+txt = "I am \f Form Feed"
+print(txt) # Expected Output =
+#\000 (Numbers not Letters)
+txt = "I am \000 Octal Value"
+print(txt) # Expected Output = I am 000 Octal Value
+#\xhh
+txt = "I am \x00 Hex Value"
+print(txt) # Expected Output = I am 00 Hex Value
+
